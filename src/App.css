@@ -16,10 +16,8 @@ body {
 
 .chic-page {
   min-height: 100vh;
+  width: 100vw;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background: radial-gradient(ellipse at center, #111111 0%, #000000 100%);
 }
 
@@ -64,14 +62,18 @@ body {
 
 /* Main content */
 .content {
-  flex: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 4rem 2rem;
-  position: relative;
+  width: auto;
+  padding: 2rem;
+  z-index: 10;
 }
 
 /* Title styling */
